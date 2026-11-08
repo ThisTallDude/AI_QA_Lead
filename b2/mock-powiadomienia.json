@@ -1,0 +1,8 @@
+{
+  "build": "7.13",
+  "changes": [
+    "Poprawka odbiorcy powiadomienia „Jestem na miejscu” przy dwóch opiekunach",
+    "Ciche godziny powiadomień",
+    "Powiadomienie o niskiej baterii zegarka"
+  ]
+}

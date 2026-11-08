@@ -1,0 +1,10 @@
+{
+  "build": "7.12",
+  "changes": [
+    "Nowy onboarding od czystej instalacji",
+    "Przebudowane parowanie zegarka dziecka",
+    "Zgoda opiekuna i potwierdzenie na urządzeniu",
+    "Link zapraszający drugiego opiekuna",
+    "Migracja około 60 000 kont ze starego systemu rozliczeń"
+  ]
+}
