@@ -26,5 +26,5 @@ Skill sam nie startuje. Trzeba go wybrać i podać plik. Katalog jest zawsze ten
 - [CONTEXT.md](../CONTEXT.md) to treść zadania rekrutacyjnego.
 - [czesc-A.md](../czesc-A.md) to diagnoza czterech obserwacji i decyzja o wydaniu.
 - [czesc-B.md](../czesc-B.md) to plan testów na jeden dzień, część B1.
-- [czesc-C.md](../czesc-C.md) to plan 30 dni: dwa usprawnienia i wskaźniki.
-- [czesc-C3.md](../czesc-C3.md) to prompty, konfiguracja skilla i nota o pracy z AI.
+- [czesc-C.md](../czesc-C.md) to plan 30 dni: dwa usprawnienia, wskaźniki i odróżnienie wcześniejszego łapania błędów od gorszego kodu.
+- [prompty.md](../prompty.md) to prompty, konfiguracja skilla i nota o pracy z AI.

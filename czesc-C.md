@@ -110,3 +110,31 @@ Z spotkania wychodzi krótka notatka: co zostaje i co się zmienia w regule, w r
 - czy odliczanie wstecz zostawiło 3 dni regresji,
 - czy raport odpowiadał, co weszło i co było puszczone, czy i tak poszło to na czat,
 - czy wpisane godziny dalej się zgadzają z tym, co zeszło.
+
+## 3. Więcej zgłoszeń: wcześniejsze QA albo gorszy kod
+
+Samej liczby zgłoszeń nie rozdzielam. Rozdzielam ją po czterech sygnałach. Źródło jest w Jirze i w wyniku tego samego suite'u: środowisko wpisane w zgłoszeniu, ile razy zgłoszenie wróciło po poprawce, oraz czy padło sprawdzenie, które poprzedni build przechodził.
+
+### Gdzie schodzi zgłoszenie
+
+Wcześniejsze QA: zgłoszenie powstaje na środowisku, na którym jakość patrzy przed użytkownikiem. Test, preprod, dzień testów. Build jeszcze nie jest na produkcji.
+
+Gorszy kod: to samo zachowanie schodzi na produkcji albo na buildzie, na którym te sprawdzenia już raz przeszły.
+
+### Ile razy wraca po poprawce
+
+Gorszy kod: błąd jest poprawiony, wraca do testu i znowu nie przechodzi. Liczy się powrót tego samego zgłoszenia. Im więcej takich powrotów, tym więcej razy trzeba retestować tę samą poprawkę, i to jest sygnał kodu.
+
+Wcześniejsze QA daje nowe zgłoszenie z jednym cyklem. Nie serię powrotów tego samego numeru.
+
+### Te same sprawdzenia
+
+Automatyzacja i te same suite'y puszczane na tym samym zakresie. Więcej niezaliczonych niż przy poprzednim buildzie, na zadaniach, które wcześniej przechodziły, to kod.
+
+Przypadki dopisane pod nowy feature do tego porównania nie wchodzą. One podnoszą liczbę, bo zakres jest szerszy, a nie dlatego, że stary zakres się posypał.
+
+### Co jest w zgłoszeniu
+
+Wcześniejsze QA: część znalezisk nie jest usterką aplikacji. Jest rozjazdem z opisem nowego feature'a. Dokumentacja, kryteria odbioru, brak w specyfikacji. Takie zgłoszenie powstaje, bo jakość weszła, zanim opis był domknięty.
+
+Gorszy kod: zgłoszenie dotyczy zachowania, które suite już znał i które wcześniej przechodziło.

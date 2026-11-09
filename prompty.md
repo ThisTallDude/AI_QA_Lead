@@ -1,4 +1,4 @@
-# Część C3 — prompty i praca z AI
+# Prompty i nota o pracy z AI
 
 Pracowałem mówieniem. Najpierw szeroko: co widzę, co mi nie pasuje, jaki ma być efekt. Potem zawężenie do jednego miejsca w pliku. Nie zaczynałem od gotowego promptu systemowego. Punktem odniesienia przez całe zadanie był [CONTEXT.md](CONTEXT.md).
 

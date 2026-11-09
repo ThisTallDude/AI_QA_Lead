@@ -29,11 +29,11 @@ Skill do tego zadania leży w [.cursor/skills/wybor-dnia-testow](.cursor/skills/
 
 ## Część C
 
-[czesc-C.md](czesc-C.md) to plan na 30 dni: dwa usprawnienia, wskaźniki po 30 i 90 dniach oraz retrospektywa.
+[czesc-C.md](czesc-C.md) to plan na 30 dni: dwa usprawnienia, wskaźniki po 30 i 90 dniach, retrospektywa oraz jak odróżnić wcześniejsze łapanie błędów od gorszego kodu.
 
-## Część C3
+## Prompty
 
-[czesc-C3.md](czesc-C3.md) to prompty w kolejności pracy, konfiguracja skilla i nota o tym, co powstało z AI, co sprawdziłem i co zmieniłem.
+[prompty.md](prompty.md) to prompty w kolejności pracy, konfiguracja skilla i nota o tym, co powstało z AI, co sprawdziłem i co zmieniłem.
 
 Dzięki,  
 Matt
