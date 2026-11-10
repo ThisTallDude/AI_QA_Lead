@@ -1,25 +1,27 @@
-# B2. Wybór pięciu przypadków na dzień
+# B2. Wybór testów pod zmianę
 
 Skill czyta listę zmian buildu i katalog 40 przypadków. Oddaje pięć, które mieszczą się w jednym dniu testów. Nie ma skryptu do uruchomienia. Krok robi agent w Cursorze.
 
 ## Jak użyć
 
 1. Otwórz ten repozytorium w Cursorze.
-2. W czacie wybierz skill [wybor-dnia-testow](../.cursor/skills/wybor-dnia-testow/SKILL.md).
-3. Wskaż jeden plik zmian, na przykład: użyj skilla na [b2/mock-7-12.json](mock-7-12.json).
-4. Odpowiedź w czacie to pięć przypadków z [katalogu](katalog-40.json): id, tytuł, dlaczego wchodzą przy tym buildzie, dane testowe, oczekiwany wynik, poziom, środowisko i czy trzeba fizycznego telefonu.
+2. W czacie wybierz skill [wybor-testow-pod-zmiane](../.cursor/skills/wybor-testow-pod-zmiane/SKILL.md).
+3. Wskaż jeden plik zmian, na przykład: użyj skilla na [b2/mock-1.json](mock-1.json).
+4. Odpowiedź w czacie to pięć przypadków z [katalogu](test-case-scenarios.json): id, tytuł, dlaczego wchodzą przy tym buildzie, dane testowe, oczekiwany wynik, poziom, środowisko i czy trzeba fizycznego telefonu.
 
 Skill sam nie startuje. Trzeba go wybrać i podać plik. Katalog jest zawsze ten sam. Zmienia się tylko plik zmian.
 
 ## Pliki tego folderu
 
-- [katalog-40.json](katalog-40.json) to czterdzieści wymyślonych przypadków. Z niego skill wybiera piątkę.
-- [mock-7-12.json](mock-7-12.json) to build 7.12: onboarding, parowanie zegarka, zgoda, link drugiego opiekuna, migracja rozliczeń.
-- [mock-powiadomienia.json](mock-powiadomienia.json) to build 7.13: tylko powiadomienia, bez kampanii i bez migracji.
+- [test-case-scenarios.json](test-case-scenarios.json) to czterdzieści wymyślonych przypadków. Z niego skill wybiera piątkę.
+- [mock-1.json](mock-1.json) to build 7.12: onboarding, parowanie zegarka, zgoda, link drugiego opiekuna, migracja rozliczeń.
+- [mock-2.json](mock-2.json) to build 7.13: tylko powiadomienia, bez kampanii i bez migracji.
+- [mock-mcp.json](mock-mcp.json) to wymyślona odpowiedź MCP: cykl Zephyra, taski QA, deweloperów i devops oraz bugi wydania 7.12.
 
-## Skill
+## Skille
 
-- [SKILL.md](../.cursor/skills/wybor-dnia-testow/SKILL.md) to stanowisko, kontekst aplikacji, co skill dostaje, jak układa priorytet i co oddaje.
+- [wybor-testow-pod-zmiane](../.cursor/skills/wybor-testow-pod-zmiane/SKILL.md) to stanowisko, kontekst aplikacji, co skill dostaje, jak układa priorytet i co oddaje.
+- [status-wydania](../.cursor/skills/status-wydania/SKILL.md) czyta [mock-mcp.json](mock-mcp.json) i oddaje aktualny status wydania: ile testów z cyklu już zeszło, ile czeka, ile godzin zostało rolom i ile bugów jest otwartych. Sam się nie włącza. Trzeba go wybrać i zapytać o aktualny status.
 
 ## Reszta zadania
 

@@ -1,13 +1,13 @@
 ---
-name: wybor-dnia-testow
+name: wybor-testow-pod-zmiane
 description: >-
-  Wybiera pięć przypadków z katalogu 40 na jeden dzień testów buildu aplikacji
-  rodzinnej. Use when the user invokes /wybor-dnia-testow, points at a mock
-  change file, or asks which test cases to run for a build.
+  Dobiera pięć przypadków z katalogu 40 do listy zmian w buildzie aplikacji
+  rodzinnej. Use when the user invokes /wybor-testow-pod-zmiane, points at a
+  mock change file, or asks which test cases fit a change.
 disable-model-invocation: true
 ---
 
-# Wybór pięciu przypadków na dzień
+# Wybór testów pod zmianę
 
 ## Stanowisko
 
@@ -19,12 +19,12 @@ Aplikacja jest dla rodzin: telefony opiekunów i zegarek dziecka. Konta, zgody, 
 
 Zespół na ten dzień: trzy osoby na telefonach i dwie od automatyzacji. Pełna regresja ręczna trwa trzy dni, więc do tego dnia nie wchodzi. Dane w katalogu i w pliku zmian są wymyślone. Nie dopisujesz przypadków spoza katalogu.
 
-Katalog jest zawsze ten sam: `b2/katalog-40.json`. Plik zmian wskazuje użytkownik.
+Katalog jest zawsze ten sam: `b2/test-case-scenarios.json`. Plik zmian wskazuje użytkownik.
 
 ## Wejście
 
 1. Plik zmian, który użytkownik poda. Czytasz pole `build` i listę `changes`.
-2. `b2/katalog-40.json`. Czterdzieści przypadków. Z każdego bierzesz `id`, `title`, `area`, `level`, `environment`, `test_data`, `expected`, `requires_physical_device`.
+2. `b2/test-case-scenarios.json`. Czterdzieści przypadków. Z każdego bierzesz `id`, `title`, `area`, `level`, `environment`, `test_data`, `expected`, `requires_physical_device`.
 
 Jeśli użytkownik nie poda pliku zmian, zatrzymaj się i poproś o ścieżkę. Nie zgaduj buildu.
 

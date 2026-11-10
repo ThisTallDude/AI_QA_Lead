@@ -1,6 +1,4 @@
-# ZADANIE REKRUTACYJNE
-
-## AI QA Lead
+# AI QA Lead
 
 Forma: zadanie decyzyjno-techniczne · Szacowany nakład: około 3 godzin
 
@@ -37,8 +35,6 @@ Przed zamrożeniem, w testach eksploracyjnych, zespół zgłosił cztery obserwa
 4. Gdy w jednej rodzinie część osób ma starą wersję aplikacji, a część nową, lista urządzeń pokazuje duplikaty. Odtworzone, przyczyna nieznana.
 
 Równolegle zespół backendu kończy migrację ok. 60 000 kont ze starego systemu rozliczeń; przełączenie zaplanowano na wtorek. Nowy onboarding nie został objęty flagą funkcji, a z powodu migracji wersja 7.12 ma trafić od razu do 100% użytkowników. Pełna regresja wymaga 3 dni, a do poniedziałku dostępny jest jeden dzień pracy zespołu QA. Osoba kierująca produktem oczekuje decyzji o wydaniu w poniedziałek o 9:00.
-
-Poufne — materiały rekrutacyjne. Strona 1 / 2
 
 ## Część A — diagnoza i decyzja o wydaniu
 
@@ -82,5 +78,3 @@ Prosty, działający element jest wart więcej niż rozbudowana koncepcja.
 | Odpowiedzi na części A, B1 i C | Dowolna |
 | Element AI z części B2 | Link do działającego workflow, repozytorium lub arkusza z dostępem do podglądu; dane mockowe w komplecie |
 | Prompty i nota o pracy z AI | Prompty, prompty systemowe i konfiguracje agentów użyte w całym zadaniu, w kolejności użycia, plus kilka zdań: co powstało z udziałem AI, co zweryfikowałeś/aś samodzielnie i co zmieniłeś/aś |
-
-Poufne — materiały rekrutacyjne. Strona 2 / 2

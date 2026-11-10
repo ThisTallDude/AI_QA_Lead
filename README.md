@@ -17,15 +17,25 @@ Poniżej jest moja odpowiedź. Brief, do którego się odnoszę, jest w [CONTEXT
 W [b2](b2/README.md) jest wybór pięciu przypadków na ten jeden dzień. Nie ma skryptu. Krok robi agent w Cursorze.
 
 1. Otwórz to repozytorium w Cursorze.
-2. W czacie wybierz skilla [wybor-dnia-testow](.cursor/skills/wybor-dnia-testow/SKILL.md).
+2. W czacie wybierz skilla [wybor-testow-pod-zmiane](.cursor/skills/wybor-testow-pod-zmiane/SKILL.md).
 3. Wskaż plik zmian. Do tego zadania są dwa:
-   - [b2/mock-7-12.json](b2/mock-7-12.json) to build 7.12,
-   - [b2/mock-powiadomienia.json](b2/mock-powiadomienia.json) to build tylko z powiadomieniami.
-4. Katalog, z którego skill bierze przypadki, jest zawsze ten sam: [b2/katalog-40.json](b2/katalog-40.json).
+   - [b2/mock-1.json](b2/mock-1.json) to build 7.12,
+   - [b2/mock-2.json](b2/mock-2.json) to build tylko z powiadomieniami.
+4. Katalog, z którego skill bierze przypadki, jest zawsze ten sam: [b2/test-case-scenarios.json](b2/test-case-scenarios.json).
 
 Odpowiedź przychodzi na czacie: pięć przypadków, z uzasadnieniem, danymi i tym, czego w tym dniu świadomie nie ma.
 
-Skill do tego zadania leży w [.cursor/skills/wybor-dnia-testow](.cursor/skills/wybor-dnia-testow/SKILL.md). Sam się nie włącza. Trzeba go wybrać i podać plik zmian.
+Skill do tego zadania leży w [.cursor/skills/wybor-testow-pod-zmiane](.cursor/skills/wybor-testow-pod-zmiane/SKILL.md). Sam się nie włącza. Trzeba go wybrać i podać plik zmian.
+
+### Status wydania
+
+Drugi skill czyta wymyśloną odpowiedź MCP i mówi, na czym stoi wydanie. Też sam się nie włącza.
+
+1. W czacie wybierz skilla [status-wydania](.cursor/skills/status-wydania/SKILL.md).
+2. Zapytaj, jaki jest aktualny status.
+3. Źródło jest w [b2/mock-mcp.json](b2/mock-mcp.json): cykl regresji w Zephyrze, taski QA, deweloperów i devops, estymacja wobec czasu spędzonego, bugi otwarte i rozwiązane.
+
+Odpowiedź przychodzi na czacie: ile testów wykonano i ile czeka, ile godzin zostało rolom na domknięcie tasków oraz ile bugów zostało.
 
 ## Część C
 

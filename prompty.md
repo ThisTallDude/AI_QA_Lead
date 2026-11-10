@@ -44,13 +44,13 @@ Polecenie, które zostało:
 - dwa pliki zmian,
 - ja wybieram skill, wskazuję plik i dostaję pięć przypadków na czacie,
 - skill nie wymyśla przypadków i nie punktuje wagami,
-- katalog jest zawsze `b2/katalog-40.json`,
+- katalog jest zawsze `b2/test-case-scenarios.json`,
 - bez pliku zmian skill ma się zatrzymać.
 
 Potem dwa uruchomienia, już jako użycie, nie jako opis:
 
-- skill `wybor-dnia-testow` na `b2/mock-7-12.json`,
-- ten sam skill na `b2/mock-powiadomienia.json`.
+- skill `wybor-testow-pod-zmiane` na `b2/mock-1.json`,
+- ten sam skill na `b2/mock-2.json`.
 
 Na końcu README w `b2`: po polsku, z linkami do plików B2 i do reszty zadania.
 
@@ -66,14 +66,21 @@ Wskaźniki: zero takich samych przypadków (za mało czasu na regresję, niewiad
 
 Na części A, B1 i C nie było osobnego promptu systemowego. Była rozmowa i `CONTEXT.md`.
 
-Jedyna zapisana konfiguracja agenta jest w [`.cursor/skills/wybor-dnia-testow/SKILL.md`](.cursor/skills/wybor-dnia-testow/SKILL.md). Włącza się tylko, gdy zostanie wybrana (`disable-model-invocation: true`).
+Zapisane konfiguracje agentów są w dwóch skillach. Każdy włącza się tylko, gdy zostanie wybrany (`disable-model-invocation: true`).
+
+[`.cursor/skills/wybor-testow-pod-zmiane/SKILL.md`](.cursor/skills/wybor-testow-pod-zmiane/SKILL.md):
 
 W nagłówku:
 
-- `name`: `wybor-dnia-testow`
+- `name`: `wybor-testow-pod-zmiane`
 - `description`: wybrać pięć przypadków z katalogu 40 na jeden dzień testów; użyć, gdy ktoś wskaże plik zmian buildu
 
 W treści, po kolei: stanowisko (jakość jednego dnia, nie decyzja o wydaniu), kontekst aplikacji i zespołu, wejście (plik zmian plus katalog), priorytet pięciu miejsc, wyjście na czat. Katalogu nie wolno rozszerzać. Przypadki spoza pliku zmian nie wchodzą do dnia.
+
+[`.cursor/skills/status-wydania/SKILL.md`](.cursor/skills/status-wydania/SKILL.md):
+
+- `name`: `status-wydania`
+- czyta tylko `b2/mock-mcp.json` i oddaje status wydania: Zephyr, czas ról, bugi. Nie dopisuje liczb.
 
 ## Co powstało z udziałem AI
 
@@ -82,7 +89,7 @@ Wszystko, co jest w plikach odpowiedzi, powstało w tej rozmowie, po kolei.
 - `CONTEXT.md` — brief przepisany do pliku, bez PDF.
 - `czesc-A.md` — diagnoza i decyzja.
 - `czesc-B.md` — pięć scenariuszy.
-- `b2/katalog-40.json`, `b2/mock-7-12.json`, `b2/mock-powiadomienia.json`, skill i `b2/README.md`.
+- `b2/test-case-scenarios.json`, `b2/mock-1.json`, `b2/mock-2.json`, `b2/mock-mcp.json`, skille i `b2/README.md`.
 - `czesc-C.md` — dwa usprawnienia i wskaźniki.
 - Ten plik.
 
